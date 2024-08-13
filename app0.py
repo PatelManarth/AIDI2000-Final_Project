@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 import numpy as np
 from tensorflow.keras.models import load_model
+import os
+import json
 
 app = Flask(__name__)
 model = load_model('lstm_model.keras')
@@ -22,6 +24,29 @@ def predict():
         # Predict and return result
         prediction = model.predict(features)
         result = (prediction > 0.5).astype(int).tolist()
+
+        # Save the prediction to a JSON file
+        prediction_data = {
+            'features': data['features'],
+            'prediction': result[0][0]
+        }
+        
+        prediction_file = 'predictions.json'
+
+        # Load existing data if the file exists, otherwise start with an empty list
+        if os.path.exists(prediction_file):
+            with open(prediction_file, 'r') as f:
+                predictions = json.load(f)
+        else:
+            predictions = []
+
+        # Append the new prediction
+        predictions.append(prediction_data)
+
+        # Save the updated data back to the file
+        with open(prediction_file, 'w') as f:
+            json.dump(predictions, f, indent=4)
+
         return jsonify({'prediction': result[0][0]})
 
     except Exception as e:
