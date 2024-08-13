@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import os
 import json
-cd backend
+
 app = Flask(__name__)
 model = load_model('lstm_model.keras')
 
