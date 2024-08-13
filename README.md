@@ -5,4 +5,4 @@ The application uses streamlit front end and flask for REST api backend.
 </br>
 A sample screenshot is uploaded in this branch with sample output.
 </br>
-The model evaluation showed 97% accuracy for the LSTM model used.
+The model evaluation showed <b>97%</b> accuracy for the LSTM model used.
