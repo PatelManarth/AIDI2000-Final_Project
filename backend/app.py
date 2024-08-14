@@ -5,7 +5,7 @@ import os
 import json
 
 app = Flask(__name__)
-model = load_model('lstm_model.keras')
+model = load_model('backend/lstm_model.keras')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -63,25 +63,7 @@ def get_predictions():
     else:
         predictions = []
 
-    # Create an HTML table
-    table_html = '''
-    <table border="1">
-        <tr>
-            <th>Index</th>
-            <th>Features</th>
-            <th>Prediction</th>
-        </tr>
-        {% for i, prediction in enumerate(predictions) %}
-        <tr>
-            <td>{{ i + 1 }}</td>
-            <td>{{ prediction['features'] }}</td>
-            <td>{{ prediction['prediction'] }}</td>
-        </tr>
-        {% endfor %}
-    </table>
-    '''
-
-    return render_template_string(table_html, predictions=predictions)
+    return jsonify(predictions)
 
 if __name__ == '__main__':
     app.run(debug=True)
