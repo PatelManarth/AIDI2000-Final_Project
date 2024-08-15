@@ -42,7 +42,6 @@ The frontend is built using Streamlit, offering an interactive interface for use
 
 The project directory is organized as follows:
 
-```plaintext
 backend/
    └── app.py
    └── lstm_model.keras
@@ -57,7 +56,8 @@ aml_final.png
 git-flow.docx
 predictions.json
 requirements.txt
-'''
+
+
 
 ### Files Description
 - **backend/app.py**: Flask backend for predictions.
