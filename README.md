@@ -12,11 +12,12 @@ Diabetes is a chronic condition affecting how the body processes blood sugar (gl
 
 ## Team Members
 This project was developed by:
-- Manarth Patel
-- Shriram Yadav
-- Manu Shrivastava
-- Rakshay Patel
-- Miraj Sutariya
+- Manarth Patel – 100943851
+- Shriram Yadav- 100951170
+- Manu Shrivastava – 100954026
+- Raskshay Patel- 100954533
+- Miraj Sutariya- 100953042
+
 
 ## Dataset
 - **diabetes_prediction_dataset.csv**: Contains patient data with features like age, BMI, glucose levels, etc.
@@ -35,27 +36,6 @@ The backend is implemented using Flask, which provides an API to interact with t
 ## Frontend Implementation
 The frontend is built using Streamlit, offering an interactive interface for users. The frontend code is in:
 - **frontend/app.py**: Streamlit application.
-
-
-## Application Structure
-
-
-The project directory is organized as follows:
-
-backend/
-   └── app.py
-   └── lstm_model.keras
-dataset/
-   └── AML_fp.ipynb
-   └── diabetes_prediction_dataset.csv
-frontend/
-   └── app.py
-.gitignore
-README.md
-aml_final.png
-git-flow.docx
-predictions.json
-requirements.txt
 
 
 
