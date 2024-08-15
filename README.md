@@ -1,8 +1,3 @@
-# AIDI2000-Final_Project
-The application runs an LSTM model to make the prediction of presence of diabetes based on the number.
-</br>
-The application uses streamlit front end and flask for REST api backend.
-</br>
-A sample screenshot is uploaded in this branch with sample output.
-</br>
-The model evaluation showed <b>97%</b> accuracy for the LSTM model used.
+AIDI2000-Final_Project: Diabetes Prediction Using LSTM Model
+Overview
+This project aims to predict the presence of diabetes using a Long Short-Term Memory (LSTM) model. The project includes a Flask-based REST API for serving predictions and a Streamlit front end for user interaction. The model evaluation achieved a high accuracy of 97%, demonstrating the effectiveness of LSTM in this application.
