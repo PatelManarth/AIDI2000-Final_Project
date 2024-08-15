@@ -36,60 +36,21 @@ The backend is implemented using Flask, which provides an API to interact with t
 The frontend is built using Streamlit, offering an interactive interface for users. The frontend code is in:
 - **frontend/app.py**: Streamlit application.
 
-## Application Structure
-
-Here is the content for the README.md file formatted to include all the details from the project report:
-
-markdown
-Copy code
-# Diabetes Prediction Using LSTM Model
-
-## Project Overview
-
-### Problem Statement
-Diabetes is a chronic condition affecting how the body processes blood sugar (glucose). Predicting diabetes risk can aid in early diagnosis and management. This project aims to develop an application that predicts diabetes risk using an LSTM (Long Short-Term Memory) model, which excels in handling sequential and time series data.
-
-### Objective
-- Develop an LSTM model to predict diabetes risk.
-- Build a Flask backend to serve the model.
-- Create a Streamlit frontend for user interaction.
-
-## Team Members
-This project was developed by:
-- Manarth Patel
-- Shriram Yadav
-- Manu Shrivastava
-- Rakshay Patel
-- Miraj Sutariya
-
-## Dataset
-- **diabetes_prediction_dataset.csv**: Contains patient data with features like age, BMI, glucose levels, etc.
-- **AML_fp.ipynb**: Jupyter Notebook for data preprocessing, exploratory analysis, and feature engineering.
-
-## Model Development
-
-### LSTM Model
-The core of the project is the LSTM model, which captures temporal dependencies in the data. The model is saved in:
-- **backend/lstm_model.keras**: Trained LSTM model in Keras format.
-
-### Backend Implementation
-The backend is implemented using Flask, which provides an API to interact with the LSTM model. The backend code is in:
-- **backend/app.py**: Flask application and API endpoints.
-
-## Frontend Implementation
-The frontend is built using Streamlit, offering an interactive interface for users. The frontend code is in:
-- **frontend/app.py**: Streamlit application.
 
 ## Application Structure
 
+
+The project directory is organized as follows:
+
+```plaintext
 backend/
-└── app.py
-└── lstm_model.keras
+   └── app.py
+   └── lstm_model.keras
 dataset/
-└── AML_fp.ipynb
-└── diabetes_prediction_dataset.csv
+   └── AML_fp.ipynb
+   └── diabetes_prediction_dataset.csv
 frontend/
-└── app.py
+   └── app.py
 .gitignore
 README.md
 aml_final.png
